@@ -15,5 +15,5 @@ jobs:
         node-version: 18
     - name: Install surge
       run: npm install -g surge
-    - name: Deploy to  nicomedes.surge.sh@surge.sh
+    - name: Deploy to  nicomedes@surge.sh
       run: surge ./_build/ nicomedes.surge.sh --token ${{ secrets.SURGE_TOKEN }}   
